@@ -11,36 +11,47 @@
   <style>
     .btn:hover {
       transform: translateY(-3px);
-      box-shadow: 5px 5px 5px rgba(0, 0, 0, .6)
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, .5)
     }
 
     .btn:active {
       transform: translateY(-1px);
       box-shadow: 5px 5px rgba(0, 0, 0, .25)
     }
+
+    .card {
+
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, .25);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    }
   </style>
   <title>Axios Course</title>
 </head>
 
+
 <body>
-  <div class="container my-5">
+  <div class="container my-3">
     <div class="text-center">
-      <div class="display-4 text-center mb-3">Axios Crash Course</div>
-      <button class="btn btn-primary my-3" id="get">Get</button>
-      <button class="btn btn-info my-3" id="post">POST</button>
-      <button class="btn btn-warning my-3" id="update">PUT</button>
-      <button class="btn btn-danger my-3" id="delete">DELETE</button>
-      <button class="btn btn-secondary my-3" id="sim">Sim Requests</button>
-      <button class="btn btn-success my-3" id="headers">Custom Headder</button>
-      <button class="btn btn-light my-3" id="traansform">Transform</button>
-      <button class="btn btn-dark my-3" id="error">Error Handling</button>
-      <button class="btn btn-outline-primary my-3" id="cancel">Cancel</button>
+      <div class="display-4 text-center mb-3  mx-1">Axios Crash Course</div>
+      <button class="btn btn-primary my-3  mx-1" id="get">Get</button>
+      <button class="btn btn-info my-3  mx-1" id="post">POST</button>
+      <button class="btn btn-warning my-3  mx-1" id="update">PUT</button>
+      <button class="btn btn-danger my-3 mx-1" id="delete">DELETE</button>
+      <button class="btn btn-secondary my-3 mx-1" id="sim">Sim Requests</button>
+      <button class="btn btn-success my-3 mx-1" id="headers">Custom Headder</button>
+      <button class="btn btn-light my-3 mx-1" id="transform">Transform</button>
+      <button class="btn btn-dark my-3 mx-1" id="error">Error Handling</button>
+      <button class="btn btn-outline-primary my-3 mx-1" id="cancel">Cancel</button>
       <hr>
       <div id="res"></div>
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="main.js"></script>
 
 
